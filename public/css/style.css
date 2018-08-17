@@ -1,0 +1,152 @@
+		@font-face {
+ 		 font-family: 'IRANSans';
+ 		 src: 
+     	url(../fonts/IRANSansWeb.woff2) format('WOFF2');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+		}
+		body{
+			background: #eeeeee !important;
+			font-family:iransans;
+			direction:rtl;
+			text-align:right;
+		}
+		.error{color:red;}		
+/*menu*/
+		#Mainmenu,#Mainmenu ul{
+			padding-right:0 !important;
+		}
+		#menu_header ul{
+			float:right;
+			width: 70%;
+		}
+		#menu_header ul li{
+			float:right;
+			margin:1% 1%;
+			list-style:none;
+		}
+		#menu_header ul li a{
+			color:#4d4d4d;
+			font-family:iransans;			
+		}
+		
+/*dashboard*/
+		#dashboard_exit{
+			width: 10%;
+			float: right;
+		}
+		dashboard_top_button{
+			width:20%;
+			float:right;
+		}
+/*modal*/
+		#myModal{
+			text-align:right;
+		}
+/*card*/
+		.headingOnTop{
+			text-align: center;
+			padding-top: 5%;
+		}
+		.card-body{
+			text-align:right;
+		}
+/*register*/
+		.mid-width{	
+			width: 390px;
+			background: #fff;
+			border-radius: 10px;
+			overflow: hidden;
+			padding: 77px 55px 33px 55px;
+			box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+			-moz-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+			-webkit-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+			-o-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+			-ms-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+			margin: 5% auto;
+		    font-family: iransans;
+		    text-align: right;
+		}		
+/*mainpage*/
+		#menu_header{
+			box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+			background:white;
+			width: 100%;
+			z-index: 100;			
+		}
+/*Card*/
+		.card{
+			height: 90%;
+			margin-bottom: 5%;
+			background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+			border-radius: 10px;
+			overflow: hidden;
+			padding: 0px 0px 33px;
+			box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+			-moz-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+			-webkit-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+			-o-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+			-ms-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+		}
+		.card-body {
+			color: rgb(141,96,249) !important;
+		}
+/*Post*/
+		#postContent{
+			height: 90%;
+			margin-bottom: 5%;
+			background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+			border-radius: 5px;
+			overflow: hidden;
+			padding: 0px 0px 33px;
+			box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+			-moz-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+			-webkit-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+			-o-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+			-ms-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+			margin-top: 1%;
+		}
+		#PostImage{
+			max-height:350px;
+			object-fit: cover;			
+		}
+		#PostTitle{
+			text-align:center;
+		}
+/*Bootstraop override*/
+		.card-img-top{
+			width: 100%;
+			min-height: 250px;
+			object-fit: cover;
+			max-height: 250px !important;
+		}
+		@media (min-width: 768px) {
+		  .modal-xl {
+			width: 100%;
+		   max-width:1200px;
+		  }
+		}
+
+/***
+Effect
+***/
+
+/*Ripple Effect*/
+			.ripple {
+			  width: 0;
+			  height: 0;
+			  border-radius: 50%;
+			  background: rgba(255, 255, 255, 0.4);
+			  transform: scale(0);
+			  position: absolute;
+			  opacity: 1;
+			}
+			.rippleEffect {
+				animation: rippleDrop .6s linear;
+			}
+			
+			@keyframes rippleDrop {
+			  100% {
+				transform: scale(2);
+				opacity: 0;
+			  }
+			}
+	
