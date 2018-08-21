@@ -2,6 +2,8 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Product;
+use Illuminate\Support\Facades\Auth;
+
 class productionsController extends Controller
 {
     /**
@@ -21,8 +23,9 @@ class productionsController extends Controller
      */
     public function productPage($id)
     {
-        $product = Product::where('id',$id)->get();
-        return view('clients.productsPage',compact('product'));
+        Auth::logout();
+            $product = Product::where('id', $id)->get();
+            return view('clients.productsPage', compact('product'));
     }
     /**
      * This method will list products order by their category

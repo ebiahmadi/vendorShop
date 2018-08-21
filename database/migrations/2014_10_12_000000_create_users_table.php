@@ -17,14 +17,13 @@ class CreateUsersTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('email')->unique();
-            $table->string('password');
-            $table->integer('orders');
-            $table->boolean('is_vendor');
-            $table->boolean('is_admin');
-            $table->integer('role');
+            $table->string('password',60);
+            $table->boolean('is_admin')->default('0');
             $table->rememberToken();
             $table->timestamps();
+
         });
+
     }
 
     /**

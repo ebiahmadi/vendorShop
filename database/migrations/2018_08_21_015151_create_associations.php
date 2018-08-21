@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CraeteCategoriesTable extends Migration
+class CreateAssociations extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,9 @@ class CraeteCategoriesTable extends Migration
      */
     public function up()
     {
-        Schema::create('categoreis', function (Blueprint $table) {
-            $table->increments('id');
-            $table->tinyInteger('product_id');
-            $table->timestamps();
+        Schema::table('users',function (Blueprint $table){
+            $table->UnsignedInteger('roll_id');
+            $table->foreign('roll_id')->references('id')->on('rolls');
         });
     }
 
@@ -27,6 +26,6 @@ class CraeteCategoriesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('categoreis');
+        //
     }
 }

@@ -3,9 +3,8 @@
     {{ $product[0]->name  }}
 @stop
 @section('links')
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" type="text/css" href="../css/productPage/tabs.css" />
-    <link rel="stylesheet" type="text/css" href="../css/productPage/tabstyles.css" />
+    <link rel="stylesheet" type="text/css" href="{{URL::asset('css/productPage/tabs.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{URL::asset('css/productPage/tabstyles.css')}}" />
     <script src="../js/productPage/modernizr.custom.js"></script>
 @stop
 @section('content')
@@ -33,7 +32,7 @@
         </div><!-- /tabs -->
     </section>
 
-    <script src="../js/productPage/cbpFWTabs.js"></script>
+    <script src="{{URL::asset('js/productPage/cbpFWTabs.js')}}"></script>
     <script>
         (function() {
 
